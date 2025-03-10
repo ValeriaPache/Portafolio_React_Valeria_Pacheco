@@ -1,34 +1,68 @@
-#root > .containerHeader{
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to bottom, #f3eacb, #d3e8c6);
+/* Estilos base del header */
+#root  >.containerHeader {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    border-radius: 20px;  
-}
-.containerHeader > .navHeader{
-    width: 96%;
-    height: 75px;
-    background-color: black;
-    display: flex; 
-    align-items: center;
-}
-.navHeader > .containerItemsHeader{
-    background-color: antiquewhite;
-    width: 90%;
-    height: 54px;
+    background: linear-gradient(to bottom, #cac1a1,rgb(189, 190, 229), #c4cbc0);
+    padding: 10px 20px;
+    border-radius: 15px;
+  }
+  
+  /* Estilos del logo */
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Estilos del menú de navegación */
+  .nav-links {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    list-style-type: none;
-    font-size: 10px;
-    align-items: center;
-}
-.containerItemsHeader > .containerLiHeader{
-    width: 29%;
-    height: 25px;
-    background-color: aqua;
-    
-}
+    gap: 15px;
+  }
+  
+  /* Estilos para los enlaces */
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover {
+    background: white;
+    border-radius: 5px;
+  }
+  
+  /* Botón de menú hamburguesa */
+  .menu-toggle {
+    display: none; /* Oculto en pantallas grandes */
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Responsive para móviles */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block; /* Se muestra en pantallas pequeñas */
+    }
+  
+    .nav-links {
+      display: none; /* Oculta el menú por defecto */
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background: cyan;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .nav-links.open {
+      display: flex; /* Muestra el menú cuando el botón es presionado */
+    }
+  }
+  

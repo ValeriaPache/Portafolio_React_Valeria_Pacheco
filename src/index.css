@@ -1,3 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.containerBody{
+    width: 98%;
+    height: 600px;
+    background: linear-gradient(to bottom, #f3eacb, #d3e8c6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerBody > #root{
+    width: 97%;
+    height: 550px;
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    display: grid;
+}

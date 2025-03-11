@@ -9,27 +9,15 @@ import { ASkills } from "./aSkills"; // Importa el componente
 
 export const LiSkills = () => {
   return (
-    <li className="liSkills">
-      <ASkills className="iconSkills" name={FaHtml5} title="Html" /> {/* Pasamos el icono como componente */}
-      <li className="liSkills">
-        <ASkills name={FaCss3 } title="Css" /> {/* Pasamos el icono como componente */}
-      </li>
-      <li>
-        <ASkills name={FaReact} title="React" /> {/* Pasamos el icono como componente */}
-      </li>
-      <li>
-        <ASkills name={FaJava} title="Java" /> {/* Pasamos el icono como componente */}
-      </li>
-      <li>
-        <ASkills name={IoLogoJavascript} title="JavaScript" /> {/* Pasamos el icono como componente */}
-      </li>
-      <li>
-        <ASkills name={SiMongodb} title="MongoDB" /> {/* Pasamos el icono como componente */}
-      </li>
-      <li>
-        <ASkills name={GrMysql} title="MySqlWorbeach" /> {/* Pasamos el icono como componente */}
-      </li>
-    </li>
+    <ul className="liSkills">
+      <ASkills className="iconSkills" name={FaHtml5} title="Html" /> 
+      <ASkills name={FaCss3 } title="Css" /> 
+      <ASkills name={FaReact} title="React" /> 
+      <ASkills name={FaJava} title="Java" /> 
+      <ASkills name={IoLogoJavascript} title="JavaScript" /> 
+      <ASkills name={SiMongodb} title="MongoDB" /> 
+      <ASkills name={GrMysql} title="MySqlWorbeach" /> 
+    </ul>
     
     
   );

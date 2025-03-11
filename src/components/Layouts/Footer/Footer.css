@@ -1,0 +1,63 @@
+/* Estilos generales */
+#root >.containerFooter {
+    background: linear-gradient(to bottom, #cac1a1,rgb(189, 190, 229), #c4cbc0);
+    padding: 10px 20px;
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .footer-links li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .containerFooter > .footer-links a:hover {
+    color: #ffeb3b;
+  }
+  
+  .icon {
+    font-size: 1.8rem;
+    color: palevioletred;
+  }
+  
+  /* 🟢 Diseño Responsivo */
+  @media (max-width: 768px) {
+    .footer-links {
+      display: flex;
+      gap: 30px;
+    }
+  
+    .footer-links a {
+      font-size: 1rem;
+    }
+  
+    .icon {
+      font-size: 2.3rem;
+    }
+  }
+  

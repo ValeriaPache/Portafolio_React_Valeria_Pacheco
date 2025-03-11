@@ -2,12 +2,15 @@ import React, {useState} from 'react'
 import { NavLink } from 'react-router-dom'
 import "./StylesHeader.css"
 import "../../../index.css"
+import logo from "../../../assets/logovale.jpg";
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
 
     <header className="containerHeader">
-      <div className="logo">Mi Logo</div>
+      <div className="logo">
+      <img src={logo} alt="Logo Vale" />
+      </div>
       {/* Botón de menú hamburguesa */}
       <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
         ☰

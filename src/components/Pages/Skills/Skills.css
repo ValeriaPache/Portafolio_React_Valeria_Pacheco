@@ -1,3 +1,7 @@
 a {
     all: unset;
 }
+.liSkills{
+    text-decoration: none;
+    color: blue;
+}

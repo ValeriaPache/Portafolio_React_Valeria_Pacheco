@@ -63,7 +63,8 @@
       position: absolute;
       top: 60px;
       left: 0;
-      background: cyan;
+      background: white;
+      opacity: 10;
       width: 100%;
       text-align: center;
       padding: 10px;
